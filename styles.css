@@ -14,6 +14,7 @@ h1 {
 
 h2 {
     text-align: center;
+    color: midnightblue;
 }
 
 table {
@@ -23,13 +24,19 @@ table {
 }
 
 thead {
-    color: steelblue;
+    color: white;
     background-color: black;
+
 }
 
 table {
     border-collapse: collapse;
     border-radius: 5px;
+}
+
+ul {
+    padding: 0 15px;
+    margin 0;
 }
 
 td, tr {
@@ -39,5 +46,11 @@ td, tr {
 .html-tag {
     font-family: "Lucida Console", Courier, monospace;
     background-color: steelblue;
+}
+
+.name {
+    font-weight: 700;
     text-align: center;
 }
+
+
