@@ -6,12 +6,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="styles.css" rel="stylesheet">
-        <title>(Topic) Cheat Sheet</title>
+        <title>HTML Tables Cheat Sheet</title>
     </head>
     
     <body>
-        <h1>(Topic) Cheat Sheet</h1>
-        <h2>Sub-Heading</h2>
+        <h1>HTML Tables Cheat Sheet</h1>
+        <h2>Elements</h2>
         <table>
             <thead>
                 <tr row>
@@ -22,21 +22,76 @@
             </thead>
             <tbody>
                 <tr row>
-                    <td>a</td>
+                    <td><span class="html-tag">&lttable&gt</span></td>
+                    <td>Table</td>
+                    <td>Creates a table.<br>
+                        Has content that is used to represent a 2D table made of rows and columns.
+                    </td>
                 </tr>  
                 <tr row>
-                    <td>b</td>
+                    <td><span class="html-tag">&ltthead&gt</span></td>
+                    <td>Table Head</td>
+                    <td>Defines the headings of table columns encapsulated in table rows.<br>
+                        The set of rows defining the column headers in a table.
+                    </td>
+                </tr>  
+                <tr row>
+                    <td><span class="html-tag">&lttr&gt</span></td>
+                    <td>Table Row</td>
+                    <td>Used to add rows to a table before adding table data and table headings.</td>
+                </tr>  
+                <tr row>
+                    <td><span class="html-tag">&ltth&gt</span></td>
+                    <td>Table Heading</td>
+                    <td>Used to add titles to rows and columns of a table (clarify the meaning of data).<br>
+                        Must be enclosed in table row elements.
+                    </td>
+                </tr>  
+                <tr row>
+                    <td><span class="html-tag">&lttd&gt</span></td>
+                    <td>Table Data</td>
+                    <td>Can be nested inside a table row element to add a cell of data to a table.</td>
                 </tr>
                 <tr row>
-                    <td>c</td>
+                    <td><span class="html-tag">&lttbody&gt</span></td>
+                    <td>Table Body</td>
+                    <td>Tables can be split into 3 main sections: a head (see above), a body, and a footer (see below).<br>
+                        Semantic HTML element that will contain all table data other than table heading and footer content (i.e. the rows containing the actual table data).<br>
+                        If used, will contain all table row elements (these make up the body of the table).<br>
+                        &lttable&gt can't have both &lttbody&gt and &lttr&gt as direct children.
+                    </td>
                 </tr>
                 <tr row>
-                    <td>c</td>
-                </tr>
+                    <td><span class="html-tag">&lttfoot&gt</span></td>
+                    <td>Table Footer</td>
+                    <td>Uses table rows to give footer content, or to summarise content at the end of a table.</td>
+                </tr>   
             </tbody>
-            <tfoot>
-
-            </tfoot>
+        </table>
+        <h2>Attributes</h2>
+        <table>
+            <thead>
+                <tr row>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr row>
+                    <td><span class="html-tag">rowspan</span></td>
+                    <td>Row Span</td>
+                    <td>Indicates how many rows a cell/&lttd&gt element should span within the table.<br>
+                        Accepts an integer (greater than or equal to 1) to denote the number of rows it spans across.<br>
+                        Default value of 1, and will take any positive integer up to 65534).
+                    </td>
+                </tr>  
+                <tr row>
+                    <td><span class="html-tag">colspan</span></td>
+                    <td>Column Span</td>
+                    <td>Indicates how many columns a cell/&lttd&gt or &ltth&gt element should span within the table.</td>
+                </tr>  
+            </tbody>
             
         </table>
     </body>
